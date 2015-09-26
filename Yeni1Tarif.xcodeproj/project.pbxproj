@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78FBDED8570EA95872599B5E /* libPods-Yeni1Tarif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2488655300BB2D28108148FA /* libPods-Yeni1Tarif.a */; };
 		9A133D921A6089AF009E319B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133D911A6089AF009E319B /* AppDelegate.swift */; };
 		9A133D941A6089AF009E319B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133D931A6089AF009E319B /* ViewController.swift */; };
 		9A133D971A6089AF009E319B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D951A6089AF009E319B /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0388C1C70937ED4341D4D490 /* Pods-Yeni1Tarif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yeni1Tarif.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yeni1Tarif/Pods-Yeni1Tarif.release.xcconfig"; sourceTree = "<group>"; };
+		2488655300BB2D28108148FA /* libPods-Yeni1Tarif.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Yeni1Tarif.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99A1306927E54A64EAB0BBF7 /* Pods-Yeni1Tarif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yeni1Tarif.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yeni1Tarif/Pods-Yeni1Tarif.debug.xcconfig"; sourceTree = "<group>"; };
 		9A133D8C1A6089AF009E319B /* Yeni1Tarif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeni1Tarif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A133D901A6089AF009E319B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A133D911A6089AF009E319B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78FBDED8570EA95872599B5E /* libPods-Yeni1Tarif.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				9A133D8E1A6089AF009E319B /* Yeni1Tarif */,
 				9A133DA41A6089AF009E319B /* Yeni1TarifTests */,
 				9A133D8D1A6089AF009E319B /* Products */,
+				BA5E6605E82AE523FE2A9BCD /* Pods */,
+				AC52FAC5A83B43FCCC27AB3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AC52FAC5A83B43FCCC27AB3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2488655300BB2D28108148FA /* libPods-Yeni1Tarif.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA5E6605E82AE523FE2A9BCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99A1306927E54A64EAB0BBF7 /* Pods-Yeni1Tarif.debug.xcconfig */,
+				0388C1C70937ED4341D4D490 /* Pods-Yeni1Tarif.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A133DAB1A6089AF009E319B /* Build configuration list for PBXNativeTarget "Yeni1Tarif" */;
 			buildPhases = (
+				6E8FDFC09AC5A8E1F58AC1CA /* Check Pods Manifest.lock */,
 				9A133D881A6089AF009E319B /* Sources */,
 				9A133D891A6089AF009E319B /* Frameworks */,
 				9A133D8A1A6089AF009E319B /* Resources */,
+				E2D07FD3C345EB2C540D27D9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +234,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E8FDFC09AC5A8E1F58AC1CA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D07FD3C345EB2C540D27D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yeni1Tarif/Pods-Yeni1Tarif-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A133D881A6089AF009E319B /* Sources */ = {
@@ -337,6 +396,7 @@
 		};
 		9A133DAC1A6089AF009E319B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A1306927E54A64EAB0BBF7 /* Pods-Yeni1Tarif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -351,6 +411,7 @@
 		};
 		9A133DAD1A6089AF009E319B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0388C1C70937ED4341D4D490 /* Pods-Yeni1Tarif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
