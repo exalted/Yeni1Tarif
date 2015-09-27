@@ -9,6 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     -> Bool
   {
     // Override point for customization after application launch.
+    Parse.setApplicationId(PARSE_APPLICATION_ID, clientKey: PARSE_CLIENT_KEY)
     return true
   }
 
