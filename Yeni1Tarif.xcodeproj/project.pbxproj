@@ -87,12 +87,20 @@
 			path = parse;
 			sourceTree = "<group>";
 		};
+		9A0FEF661BC71AD5007A66D5 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A133D931A6089AF009E319B /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		9A133D831A6089AE009E319B = {
 			isa = PBXGroup;
 			children = (
-				9A133D8E1A6089AF009E319B /* Yeni1Tarif */,
-				9A133DA41A6089AF009E319B /* Yeni1TarifTests */,
-				9A329C501BB86421002063DC /* Config */,
+				9A133D8E1A6089AF009E319B /* app */,
+				9A133DA41A6089AF009E319B /* test */,
+				9A329C501BB86421002063DC /* config */,
 				9A133D8D1A6089AF009E319B /* Products */,
 				BA5E6605E82AE523FE2A9BCD /* Pods */,
 				AC52FAC5A83B43FCCC27AB3B /* Frameworks */,
@@ -108,19 +116,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A133D8E1A6089AF009E319B /* Yeni1Tarif */ = {
+		9A133D8E1A6089AF009E319B /* app */ = {
 			isa = PBXGroup;
 			children = (
 				9A133D911A6089AF009E319B /* AppDelegate.swift */,
-				9A133D931A6089AF009E319B /* ViewController.swift */,
 				9A133D951A6089AF009E319B /* Main.storyboard */,
-				9AA141AE1BBB065600C3ABBF /* Models */,
+				9AA141AE1BBB065600C3ABBF /* models */,
+				9A0FEF661BC71AD5007A66D5 /* controllers */,
 				9A0FEF621BC71286007A66D5 /* lib */,
 				9A133D981A6089AF009E319B /* Images.xcassets */,
 				9A133D9A1A6089AF009E319B /* LaunchScreen.xib */,
 				9A133D8F1A6089AF009E319B /* Supporting Files */,
 			);
-			path = Yeni1Tarif;
+			path = app;
 			sourceTree = "<group>";
 		};
 		9A133D8F1A6089AF009E319B /* Supporting Files */ = {
@@ -132,13 +140,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9A133DA41A6089AF009E319B /* Yeni1TarifTests */ = {
+		9A133DA41A6089AF009E319B /* test */ = {
 			isa = PBXGroup;
 			children = (
 				9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */,
 				9A133DA51A6089AF009E319B /* Supporting Files */,
 			);
-			path = Yeni1TarifTests;
+			path = test;
 			sourceTree = "<group>";
 		};
 		9A133DA51A6089AF009E319B /* Supporting Files */ = {
@@ -149,23 +157,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9A329C501BB86421002063DC /* Config */ = {
+		9A329C501BB86421002063DC /* config */ = {
 			isa = PBXGroup;
 			children = (
 				9A329C511BB86421002063DC /* Yeni1Tarif.debug.xcconfig */,
 				9A329C521BB865C1002063DC /* Dotenv-Yeni1Tarif.xcconfig */,
 				9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */,
 			);
-			path = Config;
+			path = config;
 			sourceTree = "<group>";
 		};
-		9AA141AE1BBB065600C3ABBF /* Models */ = {
+		9AA141AE1BBB065600C3ABBF /* models */ = {
 			isa = PBXGroup;
 			children = (
 				9AA141AF1BBB06B500C3ABBF /* Entry.swift */,
 				9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */,
 			);
-			path = Models;
+			path = models;
 			sourceTree = "<group>";
 		};
 		AC52FAC5A83B43FCCC27AB3B /* Frameworks */ = {
@@ -193,7 +201,7 @@
 			buildConfigurationList = 9A133DAB1A6089AF009E319B /* Build configuration list for PBXNativeTarget "Yeni1Tarif" */;
 			buildPhases = (
 				6E8FDFC09AC5A8E1F58AC1CA /* Check Pods Manifest.lock */,
-				9A329C531BB86619002063DC /* Create Dotenv */,
+				9A329C531BB86619002063DC /* Setup */,
 				9A133D881A6089AF009E319B /* Sources */,
 				9A133D891A6089AF009E319B /* Frameworks */,
 				9A133D8A1A6089AF009E319B /* Resources */,
@@ -301,19 +309,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9A329C531BB86619002063DC /* Create Dotenv */ = {
+		9A329C531BB86619002063DC /* Setup */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Create Dotenv";
+			name = Setup;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bin/create-dotenv.sh";
+			shellScript = bin/setup;
 		};
 		E2D07FD3C345EB2C540D27D9 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -469,12 +477,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Yeni1Tarif/Info.plist;
+				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yeni1tarif.yeni1tarif-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Yeni1Tarif/Yeni1Tarif-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "app/Yeni1Tarif-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -487,12 +495,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = Yeni1Tarif/Info.plist;
+				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yeni1tarif.yeni1tarif-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Yeni1Tarif/Yeni1Tarif-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "app/Yeni1Tarif-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -504,7 +512,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Yeni1TarifTests/Info.plist;
+				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yeni1tarif.yeni1tarif-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,7 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = Yeni1TarifTests/Info.plist;
+				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yeni1tarif.yeni1tarif-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
