@@ -15,6 +15,8 @@
 		9A133D991A6089AF009E319B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D981A6089AF009E319B /* Images.xcassets */; };
 		9A133D9C1A6089AF009E319B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D9A1A6089AF009E319B /* LaunchScreen.xib */; };
 		9A133DA81A6089AF009E319B /* Yeni1TarifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */; };
+		9AA141B01BBB06B500C3ABBF /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA141AF1BBB06B500C3ABBF /* Entry.swift */; settings = {ASSET_TAGS = (); }; };
+		9AA141B21BBB182100C3ABBF /* Entry.Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		9A329C511BB86421002063DC /* Yeni1Tarif.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Yeni1Tarif.debug.xcconfig; sourceTree = "<group>"; };
 		9A329C521BB865C1002063DC /* Dotenv-Yeni1Tarif.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dotenv-Yeni1Tarif.xcconfig"; sourceTree = "<group>"; };
 		9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Keys-Yeni1Tarif.xcconfig"; sourceTree = "<group>"; };
+		9AA141AF1BBB06B500C3ABBF /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.Functions.swift; sourceTree = "<group>"; };
 		9AC88BC61BB7278D00D244B6 /* Yeni1Tarif-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yeni1Tarif-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +114,7 @@
 				9A133D911A6089AF009E319B /* AppDelegate.swift */,
 				9A133D931A6089AF009E319B /* ViewController.swift */,
 				9A133D951A6089AF009E319B /* Main.storyboard */,
+				9AA141AE1BBB065600C3ABBF /* Models */,
 				9A0FEF621BC71286007A66D5 /* lib */,
 				9A133D981A6089AF009E319B /* Images.xcassets */,
 				9A133D9A1A6089AF009E319B /* LaunchScreen.xib */,
@@ -152,6 +157,15 @@
 				9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		9AA141AE1BBB065600C3ABBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AA141AF1BBB06B500C3ABBF /* Entry.swift */,
+				9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		AC52FAC5A83B43FCCC27AB3B /* Frameworks */ = {
@@ -325,6 +339,8 @@
 			files = (
 				9A133D941A6089AF009E319B /* ViewController.swift in Sources */,
 				9A0FEF651BC71286007A66D5 /* Parse.Extensions.swift in Sources */,
+				9AA141B01BBB06B500C3ABBF /* Entry.swift in Sources */,
+				9AA141B21BBB182100C3ABBF /* Entry.Functions.swift in Sources */,
 				9A133D921A6089AF009E319B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
