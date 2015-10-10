@@ -17,6 +17,7 @@
 		9A442EB01BC7244B008423CC /* EntriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A442EAF1BC7244B008423CC /* EntriesController.swift */; settings = {ASSET_TAGS = (); }; };
 		9A4467D11BC9632B004CA5E7 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D01BC9632B004CA5E7 /* EntryCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9A4467D71BC9AE07004CA5E7 /* EntriesViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D61BC9AE07004CA5E7 /* EntriesViewDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		9A4467D91BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D81BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift */; settings = {ASSET_TAGS = (); }; };
 		9AA141B01BBB06B500C3ABBF /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA141AF1BBB06B500C3ABBF /* Entry.swift */; settings = {ASSET_TAGS = (); }; };
 		9AA141B21BBB182100C3ABBF /* Entry.Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
 		9A4467D01BC9632B004CA5E7 /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		9A4467D61BC9AE07004CA5E7 /* EntriesViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesViewDataSource.swift; sourceTree = "<group>"; };
+		9A4467D81BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesController.ViewLifeCycle.swift; sourceTree = "<group>"; };
 		9AA141AF1BBB06B500C3ABBF /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.Functions.swift; sourceTree = "<group>"; };
 		9AC88BC61BB7278D00D244B6 /* Yeni1Tarif-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yeni1Tarif-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9A442EAF1BC7244B008423CC /* EntriesController.swift */,
+				9A4467D81BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift */,
 			);
 			name = "View Controllers";
 			path = controllers;
@@ -403,6 +406,7 @@
 				9AA141B21BBB182100C3ABBF /* Entry.Functions.swift in Sources */,
 				9A133D921A6089AF009E319B /* AppDelegate.swift in Sources */,
 				9A4467D71BC9AE07004CA5E7 /* EntriesViewDataSource.swift in Sources */,
+				9A4467D91BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
