@@ -12,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     Parse.conditionallyEnableGlobalLogging()
     Parse.setApplicationId(PARSE_APPLICATION_ID, clientKey: PARSE_CLIENT_KEY)
+
     return true
   }
 

@@ -15,6 +15,7 @@
 		9A133D9C1A6089AF009E319B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D9A1A6089AF009E319B /* LaunchScreen.xib */; };
 		9A133DA81A6089AF009E319B /* Yeni1TarifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */; };
 		9A442EB01BC7244B008423CC /* EntriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A442EAF1BC7244B008423CC /* EntriesController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A4467D11BC9632B004CA5E7 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D01BC9632B004CA5E7 /* EntryCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9AA141B01BBB06B500C3ABBF /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA141AF1BBB06B500C3ABBF /* Entry.swift */; settings = {ASSET_TAGS = (); }; };
 		9AA141B21BBB182100C3ABBF /* Entry.Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Keys-Yeni1Tarif.xcconfig"; sourceTree = "<group>"; };
 		9A442EAF1BC7244B008423CC /* EntriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesController.swift; sourceTree = "<group>"; };
 		9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
+		9A4467D01BC9632B004CA5E7 /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
 		9AA141AF1BBB06B500C3ABBF /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.Functions.swift; sourceTree = "<group>"; };
 		9AC88BC61BB7278D00D244B6 /* Yeni1Tarif-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yeni1Tarif-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				9A133D911A6089AF009E319B /* AppDelegate.swift */,
 				9A133D951A6089AF009E319B /* Main.storyboard */,
 				9AA141AE1BBB065600C3ABBF /* models */,
+				9A4467CF1BC962FA004CA5E7 /* views */,
 				9A0FEF661BC71AD5007A66D5 /* controllers */,
 				9A0FEF621BC71286007A66D5 /* lib */,
 				9A133D981A6089AF009E319B /* Images.xcassets */,
@@ -175,6 +178,22 @@
 				9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */,
 			);
 			path = debug;
+			sourceTree = "<group>";
+		};
+		9A4467CF1BC962FA004CA5E7 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				9A4467D31BC96772004CA5E7 /* entries */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		9A4467D31BC96772004CA5E7 /* entries */ = {
+			isa = PBXGroup;
+			children = (
+				9A4467D01BC9632B004CA5E7 /* EntryCell.swift */,
+			);
+			path = entries;
 			sourceTree = "<group>";
 		};
 		9AA141AE1BBB065600C3ABBF /* models */ = {
@@ -357,6 +376,7 @@
 			files = (
 				9A0FEF651BC71286007A66D5 /* Parse.Extensions.swift in Sources */,
 				9AA141B01BBB06B500C3ABBF /* Entry.swift in Sources */,
+				9A4467D11BC9632B004CA5E7 /* EntryCell.swift in Sources */,
 				9A442EB01BC7244B008423CC /* EntriesController.swift in Sources */,
 				9AA141B21BBB182100C3ABBF /* Entry.Functions.swift in Sources */,
 				9A133D921A6089AF009E319B /* AppDelegate.swift in Sources */,

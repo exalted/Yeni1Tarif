@@ -1,7 +1,9 @@
 extension Entry {
 
   class func all() -> PFQuery {
-    return self.query()!.orderByDescending("publishedAt")
+    let query = self.query()!.orderByDescending("publishedAt")
+
+    return query
   }
 
   class func foo(something: [Entry] -> Void) {
