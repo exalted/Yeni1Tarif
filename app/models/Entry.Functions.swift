@@ -1,4 +1,5 @@
 extension Entry {
+
   class func all() -> PFQuery {
     return self.query()!.orderByDescending("publishedAt")
   }
@@ -11,4 +12,5 @@ extension Entry {
         return task
       }
   }
+
 }
