@@ -2,21 +2,14 @@ import UIKit
 
 class EntriesController : UICollectionViewController {
 
-  override func collectionView(collectionView: UICollectionView,
-                numberOfItemsInSection section: Int)
-             -> Int
-  {
-    return 3
-  }
+  var dataSource: EntriesViewDataSource?
 
-  override func collectionView(collectionView: UICollectionView,
-                cellForItemAtIndexPath indexPath: NSIndexPath)
-             -> UICollectionViewCell
-  {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
-      "cell", forIndexPath: indexPath)
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-    return cell
+    self.dataSource = EntriesViewDataSource()
+
+    self.collectionView!.dataSource = self.dataSource
   }
 
 }

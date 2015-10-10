@@ -5,11 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--EntriesController-->
+        <!--Entries Controller-->
         <scene sceneID="BAN-LZ-Fgd">
             <objects>
-                <collectionViewController id="Z8e-pX-Zj5" userLabel="EntriesController" customClass="EntriesController" customModule="Yeni1Tarif" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="F2l-Gf-HdY">
+                <collectionViewController id="Z8e-pX-Zj5" customClass="EntriesController" customModule="Yeni1Tarif" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="F2l-Gf-HdY" userLabel="Entries View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -25,7 +25,7 @@
                             </userDefinedRuntimeAttributes>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="JhZ-o1-Mdd" customClass="EntryCell" customModule="Yeni1Tarif" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="JhZ-o1-Mdd" userLabel="Entry Cell" customClass="EntryCell" customModule="Yeni1Tarif" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -50,7 +50,6 @@
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="Z8e-pX-Zj5" id="Pmj-Sd-JsG"/>
                             <outlet property="delegate" destination="Z8e-pX-Zj5" id="LdI-dL-xNt"/>
                         </connections>
                     </collectionView>
