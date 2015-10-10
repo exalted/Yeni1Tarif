@@ -47,6 +47,7 @@
 		9A329C521BB865C1002063DC /* Dotenv-Yeni1Tarif.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dotenv-Yeni1Tarif.xcconfig"; sourceTree = "<group>"; };
 		9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Keys-Yeni1Tarif.xcconfig"; sourceTree = "<group>"; };
 		9A442EAF1BC7244B008423CC /* EntriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesController.swift; sourceTree = "<group>"; };
+		9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
 		9AA141AF1BBB06B500C3ABBF /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.Functions.swift; sourceTree = "<group>"; };
 		9AC88BC61BB7278D00D244B6 /* Yeni1Tarif-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yeni1Tarif-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		9A0FEF621BC71286007A66D5 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				9A4467CB1BC95561004CA5E7 /* debug */,
 				9A0FEF631BC71286007A66D5 /* parse */,
 			);
 			path = lib;
@@ -165,6 +167,14 @@
 				9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */,
 			);
 			path = config;
+			sourceTree = "<group>";
+		};
+		9A4467CB1BC95561004CA5E7 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */,
+			);
+			path = debug;
 			sourceTree = "<group>";
 		};
 		9AA141AE1BBB065600C3ABBF /* models */ = {

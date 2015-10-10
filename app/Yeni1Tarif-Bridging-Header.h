@@ -3,4 +3,6 @@
 //  expose to Swift.
 //
 
+#import "UIView+Debug.h"
+
 #import <Parse/Parse.h>
