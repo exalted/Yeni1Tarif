@@ -1,25 +1,16 @@
 import UIKit
 
-class EntriesViewDataSource : NSObject, UICollectionViewDataSource {
+class EntriesViewDataSource : NSObject {
 
-  @objc
-  func collectionView(collectionView: UICollectionView,
-       numberOfItemsInSection section: Int)
-    -> Int
-  {
-    return 3
+  private var entries :[Entry] = []
+
+  var count :Int {
+    get { return self.entries.count }
   }
 
-  @objc
-  func collectionView(
-       collectionView: UICollectionView,
-       cellForItemAtIndexPath indexPath: NSIndexPath)
-    -> UICollectionViewCell
-  {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
-      "cell", forIndexPath: indexPath)
-
-    return cell
+  func include(entries :[Entry]) {
+    self.entries.appendContentsOf(entries)
   }
 
 }
+

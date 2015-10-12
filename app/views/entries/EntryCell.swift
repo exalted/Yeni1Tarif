@@ -9,20 +9,20 @@ class EntryCell: UICollectionViewCell {
     let attributes = super.preferredLayoutAttributesFittingAttributes(
       layoutAttributes)
 
-    let window = UIApplication.sharedApplication().delegate!.window!!
-    let windowWidth = window.bounds.width
+    guard let window = UIApplication.sharedApplication().delegate?.window?!
+      else { return attributes }
 
     let indexPath = layoutAttributes.indexPath
     switch(indexPath.section, indexPath.row) {
 
     case (_, 0):
       // 4:3 ratio
-      let width = windowWidth
+      let width = window.bounds.width
       attributes.size = CGSize(width: width, height: width * 3/4)
       
     default:
       // 1:1 ratio
-      let width = windowWidth / 3
+      let width = window.bounds.width / 3
       attributes.size = CGSize(width: width, height: width)
 
     }
