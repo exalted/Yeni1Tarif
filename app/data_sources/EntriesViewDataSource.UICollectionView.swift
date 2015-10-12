@@ -2,7 +2,6 @@ import UIKit
 
 extension EntriesViewDataSource : UICollectionViewDataSource {
 
-  @objc
   func collectionView(collectionView: UICollectionView,
     numberOfItemsInSection section: Int)
     -> Int
@@ -12,7 +11,6 @@ extension EntriesViewDataSource : UICollectionViewDataSource {
     return count
   }
 
-  @objc
   func collectionView(
     collectionView: UICollectionView,
     cellForItemAtIndexPath indexPath: NSIndexPath)
