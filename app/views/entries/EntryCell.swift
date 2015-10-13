@@ -15,9 +15,9 @@ class EntryCell: UICollectionViewCell {
       else { return attributes }
 
     let indexPath = layoutAttributes.indexPath
-    switch(indexPath.section, indexPath.row) {
+    switch(indexPath.row) {
 
-    case (_, 0):
+    case 0:
       // 4:3 ratio
       let width = window.bounds.width
       attributes.size = CGSize(width: width, height: width * 3/4)
