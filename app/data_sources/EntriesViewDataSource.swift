@@ -12,5 +12,9 @@ class EntriesViewDataSource : NSObject {
     self.entries.appendContentsOf(entries)
   }
 
+  func entryAtIndexPath(indexPath: NSIndexPath) -> Entry? {
+    return self.entries[indexPath.row]
+  }
+
 }
 

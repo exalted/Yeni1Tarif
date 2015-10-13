@@ -17,7 +17,11 @@ extension EntriesViewDataSource : UICollectionViewDataSource {
     -> UICollectionViewCell
   {
     let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
-      "cell", forIndexPath: indexPath)
+      "cell", forIndexPath: indexPath) as! EntryCell
+
+    guard let entry = self.entryAtIndexPath(indexPath) else { return cell }
+
+    let url = NSURL(string: entry.previewUrl)
 
     return cell
   }
