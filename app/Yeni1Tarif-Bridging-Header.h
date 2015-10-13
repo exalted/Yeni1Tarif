@@ -3,4 +3,7 @@
 //  expose to Swift.
 //
 
+#import "UIView+Debug.h"
+
 #import <Parse/Parse.h>
+#import <SDWebImage/UIImageView+WebCache.h>

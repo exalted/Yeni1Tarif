@@ -10,11 +10,15 @@
 		78FBDED8570EA95872599B5E /* libPods-Yeni1Tarif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2488655300BB2D28108148FA /* libPods-Yeni1Tarif.a */; };
 		9A0FEF651BC71286007A66D5 /* Parse.Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0FEF641BC71286007A66D5 /* Parse.Extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		9A133D921A6089AF009E319B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133D911A6089AF009E319B /* AppDelegate.swift */; };
-		9A133D941A6089AF009E319B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133D931A6089AF009E319B /* ViewController.swift */; };
 		9A133D971A6089AF009E319B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D951A6089AF009E319B /* Main.storyboard */; };
 		9A133D991A6089AF009E319B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D981A6089AF009E319B /* Images.xcassets */; };
 		9A133D9C1A6089AF009E319B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D9A1A6089AF009E319B /* LaunchScreen.xib */; };
 		9A133DA81A6089AF009E319B /* Yeni1TarifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */; };
+		9A442EB01BC7244B008423CC /* EntriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A442EAF1BC7244B008423CC /* EntriesController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A4467D11BC9632B004CA5E7 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D01BC9632B004CA5E7 /* EntryCell.swift */; settings = {ASSET_TAGS = (); }; };
+		9A4467D71BC9AE07004CA5E7 /* EntriesViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D61BC9AE07004CA5E7 /* EntriesViewDataSource.swift */; settings = {ASSET_TAGS = (); }; };
+		9A4467D91BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D81BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift */; settings = {ASSET_TAGS = (); }; };
+		9A4C0E801BCB2B06000D1000 /* EntriesViewDataSource.UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4C0E7F1BCB2B06000D1000 /* EntriesViewDataSource.UICollectionView.swift */; settings = {ASSET_TAGS = (); }; };
 		9AA141B01BBB06B500C3ABBF /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA141AF1BBB06B500C3ABBF /* Entry.swift */; settings = {ASSET_TAGS = (); }; };
 		9AA141B21BBB182100C3ABBF /* Entry.Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -37,7 +41,6 @@
 		9A133D8C1A6089AF009E319B /* Yeni1Tarif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yeni1Tarif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A133D901A6089AF009E319B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A133D911A6089AF009E319B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A133D931A6089AF009E319B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9A133D961A6089AF009E319B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A133D981A6089AF009E319B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A133D9B1A6089AF009E319B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,6 +50,12 @@
 		9A329C511BB86421002063DC /* Yeni1Tarif.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Yeni1Tarif.debug.xcconfig; sourceTree = "<group>"; };
 		9A329C521BB865C1002063DC /* Dotenv-Yeni1Tarif.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dotenv-Yeni1Tarif.xcconfig"; sourceTree = "<group>"; };
 		9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Keys-Yeni1Tarif.xcconfig"; sourceTree = "<group>"; };
+		9A442EAF1BC7244B008423CC /* EntriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesController.swift; sourceTree = "<group>"; };
+		9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
+		9A4467D01BC9632B004CA5E7 /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
+		9A4467D61BC9AE07004CA5E7 /* EntriesViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesViewDataSource.swift; sourceTree = "<group>"; };
+		9A4467D81BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesController.ViewLifeCycle.swift; sourceTree = "<group>"; };
+		9A4C0E7F1BCB2B06000D1000 /* EntriesViewDataSource.UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntriesViewDataSource.UICollectionView.swift; sourceTree = "<group>"; };
 		9AA141AF1BBB06B500C3ABBF /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.Functions.swift; sourceTree = "<group>"; };
 		9AC88BC61BB7278D00D244B6 /* Yeni1Tarif-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yeni1Tarif-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -71,36 +80,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9A0FEF621BC71286007A66D5 /* lib */ = {
+		9A0FEF621BC71286007A66D5 /* Extended Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9A0FEF631BC71286007A66D5 /* parse */,
+				9A4467CB1BC95561004CA5E7 /* Debug */,
+				9A0FEF631BC71286007A66D5 /* Parse */,
 			);
+			name = "Extended Modules";
 			path = lib;
 			sourceTree = "<group>";
 		};
-		9A0FEF631BC71286007A66D5 /* parse */ = {
+		9A0FEF631BC71286007A66D5 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
 				9A0FEF641BC71286007A66D5 /* Parse.Extensions.swift */,
 			);
+			name = Parse;
 			path = parse;
 			sourceTree = "<group>";
 		};
-		9A0FEF661BC71AD5007A66D5 /* controllers */ = {
+		9A0FEF661BC71AD5007A66D5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9A133D931A6089AF009E319B /* ViewController.swift */,
+				9A442EAF1BC7244B008423CC /* EntriesController.swift */,
+				9A4467D81BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift */,
 			);
+			name = "View Controllers";
 			path = controllers;
 			sourceTree = "<group>";
 		};
 		9A133D831A6089AE009E319B = {
 			isa = PBXGroup;
 			children = (
-				9A133D8E1A6089AF009E319B /* app */,
-				9A133DA41A6089AF009E319B /* test */,
-				9A329C501BB86421002063DC /* config */,
+				9A133D8E1A6089AF009E319B /* App */,
+				9A133DA41A6089AF009E319B /* Tests */,
+				9A329C501BB86421002063DC /* Configuration */,
 				9A133D8D1A6089AF009E319B /* Products */,
 				BA5E6605E82AE523FE2A9BCD /* Pods */,
 				AC52FAC5A83B43FCCC27AB3B /* Frameworks */,
@@ -116,18 +130,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9A133D8E1A6089AF009E319B /* app */ = {
+		9A133D8E1A6089AF009E319B /* App */ = {
 			isa = PBXGroup;
 			children = (
 				9A133D911A6089AF009E319B /* AppDelegate.swift */,
 				9A133D951A6089AF009E319B /* Main.storyboard */,
-				9AA141AE1BBB065600C3ABBF /* models */,
-				9A0FEF661BC71AD5007A66D5 /* controllers */,
-				9A0FEF621BC71286007A66D5 /* lib */,
+				9AA141AE1BBB065600C3ABBF /* Data Models */,
+				9A4467CF1BC962FA004CA5E7 /* View Models */,
+				9A0FEF661BC71AD5007A66D5 /* View Controllers */,
+				9A4467D41BC9AD52004CA5E7 /* Data Sources */,
+				9A0FEF621BC71286007A66D5 /* Extended Modules */,
 				9A133D981A6089AF009E319B /* Images.xcassets */,
 				9A133D9A1A6089AF009E319B /* LaunchScreen.xib */,
 				9A133D8F1A6089AF009E319B /* Supporting Files */,
 			);
+			name = App;
 			path = app;
 			sourceTree = "<group>";
 		};
@@ -140,12 +157,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9A133DA41A6089AF009E319B /* test */ = {
+		9A133DA41A6089AF009E319B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */,
 				9A133DA51A6089AF009E319B /* Supporting Files */,
 			);
+			name = Tests;
 			path = test;
 			sourceTree = "<group>";
 		};
@@ -157,22 +175,61 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9A329C501BB86421002063DC /* config */ = {
+		9A329C501BB86421002063DC /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
 				9A329C511BB86421002063DC /* Yeni1Tarif.debug.xcconfig */,
 				9A329C521BB865C1002063DC /* Dotenv-Yeni1Tarif.xcconfig */,
 				9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */,
 			);
+			name = Configuration;
 			path = config;
 			sourceTree = "<group>";
 		};
-		9AA141AE1BBB065600C3ABBF /* models */ = {
+		9A4467CB1BC95561004CA5E7 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */,
+			);
+			name = Debug;
+			path = debug;
+			sourceTree = "<group>";
+		};
+		9A4467CF1BC962FA004CA5E7 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9A4467D31BC96772004CA5E7 /* Entries */,
+			);
+			name = "View Models";
+			path = views;
+			sourceTree = "<group>";
+		};
+		9A4467D31BC96772004CA5E7 /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				9A4467D01BC9632B004CA5E7 /* EntryCell.swift */,
+			);
+			name = Entries;
+			path = entries;
+			sourceTree = "<group>";
+		};
+		9A4467D41BC9AD52004CA5E7 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9A4467D61BC9AE07004CA5E7 /* EntriesViewDataSource.swift */,
+				9A4C0E7F1BCB2B06000D1000 /* EntriesViewDataSource.UICollectionView.swift */,
+			);
+			name = "Data Sources";
+			path = data_sources;
+			sourceTree = "<group>";
+		};
+		9AA141AE1BBB065600C3ABBF /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
 				9AA141AF1BBB06B500C3ABBF /* Entry.swift */,
 				9AA141B11BBB182100C3ABBF /* Entry.Functions.swift */,
 			);
+			name = "Data Models";
 			path = models;
 			sourceTree = "<group>";
 		};
@@ -345,11 +402,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A133D941A6089AF009E319B /* ViewController.swift in Sources */,
 				9A0FEF651BC71286007A66D5 /* Parse.Extensions.swift in Sources */,
+				9A4C0E801BCB2B06000D1000 /* EntriesViewDataSource.UICollectionView.swift in Sources */,
 				9AA141B01BBB06B500C3ABBF /* Entry.swift in Sources */,
+				9A4467D11BC9632B004CA5E7 /* EntryCell.swift in Sources */,
+				9A442EB01BC7244B008423CC /* EntriesController.swift in Sources */,
 				9AA141B21BBB182100C3ABBF /* Entry.Functions.swift in Sources */,
 				9A133D921A6089AF009E319B /* AppDelegate.swift in Sources */,
+				9A4467D71BC9AE07004CA5E7 /* EntriesViewDataSource.swift in Sources */,
+				9A4467D91BC9D4A8004CA5E7 /* EntriesController.ViewLifeCycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +545,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "app/Yeni1Tarif-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -501,6 +563,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "app/Yeni1Tarif-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
