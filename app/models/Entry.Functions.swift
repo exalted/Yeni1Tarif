@@ -3,6 +3,7 @@ extension Entry {
   class func allPaginated(skip :Int = 0, actionOnMoreEntries: [Entry] -> Void) {
     let query = self.query()
     query?.skip = skip
+    query?.whereKey("tags", equalTo: "Tariflerim")
     query?.orderByDescending("publishedAt")
 
     query?.findObjectsInBackgroundWithBlock { (result, error) -> Void in
