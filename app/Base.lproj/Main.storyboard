@@ -32,7 +32,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yeni1tarif-2353" translatesAutoresizingMaskIntoConstraints="NO" id="CyW-Ck-yBT">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CyW-Ck-yBT">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                                             <animations/>
                                         </imageView>
@@ -47,6 +47,9 @@
                                     <constraint firstItem="CyW-Ck-yBT" firstAttribute="centerY" secondItem="JhZ-o1-Mdd" secondAttribute="centerY" id="Vn4-0N-czG"/>
                                     <constraint firstItem="CyW-Ck-yBT" firstAttribute="centerX" secondItem="JhZ-o1-Mdd" secondAttribute="centerX" id="s3e-q8-8XS"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="previewImageView" destination="CyW-Ck-yBT" id="yih-a3-8Zj"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -59,7 +62,4 @@
             <point key="canvasLocation" x="396" y="365"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="yeni1tarif-2353" width="2448" height="2448"/>
-    </resources>
 </document>
