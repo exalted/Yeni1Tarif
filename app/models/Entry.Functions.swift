@@ -4,6 +4,8 @@ extension Entry {
     let query = self.query()
     query?.skip = skip
     query?.whereKey("tags", equalTo: "Tariflerim")
+    query?.whereKey("previewUrl", hasPrefix: "http://www.yeni1tarif.com/wp-content/uploads/")
+    query?.whereKey("previewUrl", hasSuffix: "1024x1024.jpg")
     query?.orderByDescending("publishedAt")
 
     query?.findObjectsInBackgroundWithBlock { (result, error) -> Void in
