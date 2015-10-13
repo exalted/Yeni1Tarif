@@ -22,6 +22,7 @@ extension EntriesViewDataSource : UICollectionViewDataSource {
     guard let entry = self.entryAtIndexPath(indexPath) else { return cell }
 
     let url = NSURL(string: entry.previewUrl)
+    cell.previewImageView.sd_setImageWithURL(url)
 
     return cell
   }
