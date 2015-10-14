@@ -2,7 +2,7 @@ import Foundation
 
 extension Entry {
 
-  class func allPaginated(skip :Int = 0, actionOnMoreEntries: [Entry] -> Void) {
+  class func allPaginated(skip :Int = 0, actionOnMoreEntries: [Entry] -> ()) {
     let query = self.query()
     query?.skip = skip
     query?.whereKey("tags", equalTo: "Tariflerim")
@@ -10,8 +10,9 @@ extension Entry {
     query?.whereKey("previewUrl", hasSuffix: "1024x1024.jpg")
     query?.orderByDescending("publishedAt")
 
-    query?.findObjectsInBackgroundWithBlock { (result, error) -> Void in
+    query?.findObjectsInBackgroundWithBlock { (result, error) -> () in
       guard let entries = result as? [Entry] else { return }
+
       actionOnMoreEntries(entries)
 
       if entries.count == 0 { return }

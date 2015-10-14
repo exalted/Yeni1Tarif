@@ -4,32 +4,26 @@ class EntryCell: UICollectionViewCell {
     
   @IBOutlet weak var previewImage: UIImageView!
 
-  override func preferredLayoutAttributesFittingAttributes(
-                         layoutAttributes: UICollectionViewLayoutAttributes)
-             -> UICollectionViewLayoutAttributes
+  func configureWithObject(object: NSObject,
+       forIndexPath indexPath: NSIndexPath)
   {
-    let attributes = super.preferredLayoutAttributesFittingAttributes(
-      layoutAttributes)
+    let entry = object as! Entry
 
-    guard let window = UIApplication.sharedApplication().delegate?.window?!
-      else { return attributes }
-
-    let indexPath = layoutAttributes.indexPath
     switch(indexPath.row) {
 
     case 0:
-      // 4:3 ratio
-      let width = window.bounds.width
-      attributes.size = CGSize(width: width, height: width * 3/4)
-      
+      let previewUrl = entry.previewUrl
+      let url = NSURL(string: previewUrl)
+      self.previewImage.sd_setImageWithURL(url)
+
     default:
-      // 1:1 ratio
-      let width = window.bounds.width / 3
-      attributes.size = CGSize(width: width, height: width)
-
+      let previewUrl = entry.previewUrl.stringByReplacingOccurrencesOfString(
+        "1024x1024",
+        withString: "150x150")
+      let url = NSURL(string: previewUrl)
+      self.previewImage.sd_setImageWithURL(url)
+      
     }
-
-    return attributes
   }
 
 }

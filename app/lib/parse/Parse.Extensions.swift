@@ -25,7 +25,7 @@ extension Parse {
   {
     let requestKey = PFNetworkNotificationURLRequestUserInfoKey
     guard let request = notification.userInfo?[requestKey] as? NSURLRequest
-      else { return }
+    else { return }
 
     let requestBody = NSString(
       data: request.HTTPBody!,
@@ -41,10 +41,9 @@ extension Parse {
                                           notification: NSNotification)
   {
     let responseKey = PFNetworkNotificationURLResponseUserInfoKey
-    guard let response = (
-      notification.userInfo?[responseKey] as? NSHTTPURLResponse
-    )
-      else { return }
+    guard
+      let response = notification.userInfo?[responseKey] as? NSHTTPURLResponse
+    else { return }
 
     // // TODO: add custom loglevel to enable logging as well as printing out
     // let responseBodyKey = PFNetworkNotificationURLResponseBodyUserInfoKey

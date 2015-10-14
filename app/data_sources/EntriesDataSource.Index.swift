@@ -3,17 +3,14 @@ import UIKit
 extension EntriesDataSource : UICollectionViewDataSource {
 
   func collectionView(collectionView: UICollectionView,
-    numberOfItemsInSection section: Int)
+       numberOfItemsInSection section: Int)
     -> Int
   {
-    let count = self.count
-
-    return count
+    return self.count
   }
 
-  func collectionView(
-    collectionView: UICollectionView,
-    cellForItemAtIndexPath indexPath: NSIndexPath)
+  func collectionView(collectionView: UICollectionView,
+       cellForItemAtIndexPath indexPath: NSIndexPath)
     -> UICollectionViewCell
   {
     let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
@@ -21,19 +18,7 @@ extension EntriesDataSource : UICollectionViewDataSource {
 
     guard let entry = self.entryAtIndexPath(indexPath) else { return cell }
 
-    switch(indexPath.row) {
-
-    case 0:
-      let previewUrl = entry.previewUrl
-      let url = NSURL(string: previewUrl)
-      cell.previewImage.sd_setImageWithURL(url)
-
-    default:
-      let previewUrl = entry.previewUrl.stringByReplacingOccurrencesOfString("1024x1024", withString: "150x150")
-      let url = NSURL(string: previewUrl)
-      cell.previewImage.sd_setImageWithURL(url)
-
-    }
+    cell.configureWithObject(entry, forIndexPath: indexPath)
 
     return cell
   }
