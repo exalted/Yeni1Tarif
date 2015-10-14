@@ -1,8 +1,8 @@
 import UIKit
 
-class EntriesController : UICollectionViewController {
+class EntriesIndexController : UICollectionViewController {
 
-  var dataSource: EntriesViewDataSource?
+  var dataSource: EntriesDataSource?
 
   override init(collectionViewLayout layout: UICollectionViewLayout) {
     super.init(collectionViewLayout: layout)
@@ -16,8 +16,13 @@ class EntriesController : UICollectionViewController {
     self._init()
   }
 
+}
+
+// MARK: Internal
+extension EntriesIndexController {
+
   private func _init() {
-    self.dataSource = EntriesViewDataSource()
+    self.dataSource = EntriesDataSource()
   }
 
 }

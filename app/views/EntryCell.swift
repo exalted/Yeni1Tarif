@@ -2,7 +2,7 @@ import UIKit
 
 class EntryCell: UICollectionViewCell {
     
-  @IBOutlet weak var previewImageView: UIImageView!
+  @IBOutlet weak var previewImage: UIImageView!
 
   override func preferredLayoutAttributesFittingAttributes(
                          layoutAttributes: UICollectionViewLayoutAttributes)

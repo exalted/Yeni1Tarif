@@ -1,3 +1,5 @@
+import Foundation
+
 extension Entry {
 
   class func allPaginated(skip :Int = 0, actionOnMoreEntries: [Entry] -> Void) {

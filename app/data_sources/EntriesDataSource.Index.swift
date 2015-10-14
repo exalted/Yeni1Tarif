@@ -1,6 +1,6 @@
 import UIKit
 
-extension EntriesViewDataSource : UICollectionViewDataSource {
+extension EntriesDataSource : UICollectionViewDataSource {
 
   func collectionView(collectionView: UICollectionView,
     numberOfItemsInSection section: Int)
@@ -26,12 +26,12 @@ extension EntriesViewDataSource : UICollectionViewDataSource {
     case 0:
       let previewUrl = entry.previewUrl
       let url = NSURL(string: previewUrl)
-      cell.previewImageView.sd_setImageWithURL(url)
+      cell.previewImage.sd_setImageWithURL(url)
 
     default:
       let previewUrl = entry.previewUrl.stringByReplacingOccurrencesOfString("1024x1024", withString: "150x150")
       let url = NSURL(string: previewUrl)
-      cell.previewImageView.sd_setImageWithURL(url)
+      cell.previewImage.sd_setImageWithURL(url)
 
     }
 

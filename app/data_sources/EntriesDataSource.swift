@@ -1,6 +1,6 @@
 import UIKit
 
-class EntriesViewDataSource : NSObject {
+class EntriesDataSource : NSObject {
 
   private var entries :[Entry] = []
 

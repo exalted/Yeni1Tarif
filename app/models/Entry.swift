@@ -1,3 +1,5 @@
+import Foundation
+
 class Entry : PFObject {
 
   @NSManaged var publishedAt: NSDate
@@ -9,8 +11,7 @@ class Entry : PFObject {
 
 }
 
-
-// Boilerplate: register Parse subclass
+// MARK: boilerplate (Parse)
 extension Entry : PFSubclassing {
 
   override class func initialize() {

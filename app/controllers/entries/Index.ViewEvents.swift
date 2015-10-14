@@ -1,6 +1,6 @@
 import UIKit
 
-extension EntriesController {
+extension EntriesIndexController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -13,6 +13,11 @@ extension EntriesController {
 
     self.updateData()
   }
+
+}
+
+// MARK: Internal
+extension EntriesIndexController {
 
   private func updateData() {
     Entry.allPaginated { (moreEntries) -> Void in

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Entries Controller-->
+        <!--Entries Index Controller-->
         <scene sceneID="BAN-LZ-Fgd">
             <objects>
-                <collectionViewController id="Z8e-pX-Zj5" customClass="EntriesController" customModule="Yeni1Tarif" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Z8e-pX-Zj5" customClass="EntriesIndexController" customModule="Yeni1Tarif" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="F2l-Gf-HdY" userLabel="Entries View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
                                     <constraint firstItem="CyW-Ck-yBT" firstAttribute="centerX" secondItem="JhZ-o1-Mdd" secondAttribute="centerX" id="s3e-q8-8XS"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="previewImageView" destination="CyW-Ck-yBT" id="yih-a3-8Zj"/>
+                                    <outlet property="previewImage" destination="CyW-Ck-yBT" id="yih-a3-8Zj"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
