@@ -2,13 +2,13 @@ import UIKit
 
 class EntriesDataSource : NSObject {
 
-  private var entries :[Entry] = []
+  private var entries: [Entry] = []
 
-  var count :Int {
+  var count: Int {
     get { return self.entries.count }
   }
 
-  func include(entries :[Entry]) {
+  func include(entries: [Entry]) {
     self.entries.appendContentsOf(entries)
   }
 
@@ -17,4 +17,3 @@ class EntriesDataSource : NSObject {
   }
 
 }
-

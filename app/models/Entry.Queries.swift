@@ -2,7 +2,7 @@ import Foundation
 
 extension Entry {
 
-  class func allPaginated(skip :Int = 0, actionOnMoreEntries: [Entry] -> ()) {
+  class func allPaginated(skip: Int = 0, actionOnMoreEntries: [Entry] -> ()) {
     let query = self.query()
     query?.skip = skip
     query?.whereKey("tags", equalTo: "Tariflerim")
