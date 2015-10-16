@@ -20,8 +20,8 @@ extension EntriesIndexController {
 extension EntriesIndexController {
 
   private func updateData() {
-    Entry.allPaginated { (moreEntries) -> () in
-      self.dataSource?.include(moreEntries)
+    Entry.allPaginated {
+      guard self.dataSource.include($0) else { return }
       self.collectionView?.reloadData()
     }
   }

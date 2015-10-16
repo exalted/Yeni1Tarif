@@ -1,3 +1,5 @@
+import Foundation
+
 extension Parse {
 
   class func conditionallyEnableGlobalLogging() {

@@ -2,7 +2,7 @@ import UIKit
 
 class EntriesIndexController : UICollectionViewController {
 
-  var dataSource: EntriesDataSource?
+  var dataSource: EntriesDataSource!
 
   override init(collectionViewLayout layout: UICollectionViewLayout) {
     super.init(collectionViewLayout: layout)
