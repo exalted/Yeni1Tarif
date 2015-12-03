@@ -14,6 +14,27 @@ extension EntriesIndexController {
     self.updateData()
   }
 
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    super.prepareForSegue(segue, sender: sender)
+
+    guard
+      segue.identifier == "fromEntriesIndexToEntriesShowSegue",
+      let destination = (
+        segue.destinationViewController as? EntriesShowController
+      ),
+      cell = sender as? UICollectionViewCell,
+      indexPath = self.collectionView?.indexPathForCell(cell)
+    else { return }
+
+    let entry = self.dataSource.entryAtIndexPath(indexPath)
+
+    // TODO: replace with `destination.objectId = entry?.objectId` instead,
+    //       then querying for "entry" by its "id" inside EntriesShowController.
+    destination.entry = entry
+  }
+
+  @IBAction func unwindToEntriesIndex(segue: UIStoryboardSegue) { }
+
 }
 
 // MARK: Internal
