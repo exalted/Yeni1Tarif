@@ -14,6 +14,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
+                        <color key="backgroundColor" red="0.96855658292770386" green="0.96866899728775024" blue="0.96850472688674927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="6y6-vD-hk4">
                             <size key="itemSize" width="600" height="450"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
