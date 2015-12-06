@@ -13,8 +13,9 @@ extension EntriesDataSource : UICollectionViewDataSource {
        cellForItemAtIndexPath indexPath: NSIndexPath)
     -> UICollectionViewCell
   {
-    let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
-      "cell", forIndexPath: indexPath) as! EntryCell
+    let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell",
+                              forIndexPath: indexPath)
+      as! EntryCell
 
     guard let entry = self.entryAtIndexPath(indexPath) else { return cell }
 

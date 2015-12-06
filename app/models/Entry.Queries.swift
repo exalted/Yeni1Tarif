@@ -6,7 +6,8 @@ extension Entry {
     let query = self.query()
     query?.skip = skip
     query?.whereKey("tags", equalTo: "Tariflerim")
-    query?.whereKey("previewUrl", hasPrefix: "http://www.yeni1tarif.com/wp-content/uploads/")
+    query?.whereKey("previewUrl",
+           hasPrefix: "http://www.yeni1tarif.com/wp-content/uploads/")
     query?.whereKey("previewUrl", hasSuffix: "1024x1024.jpg")
     query?.orderByDescending("publishedAt")
 
@@ -17,9 +18,8 @@ extension Entry {
 
       if entries.count == 0 { return }
 
-      self.allPaginated(
-        skip + entries.count,
-        actionOnMoreEntries: actionOnMoreEntries)
+      self.allPaginated(skip + entries.count,
+           actionOnMoreEntries: actionOnMoreEntries)
     }
   }
 

@@ -19,9 +19,8 @@ extension EntriesIndexController {
 
     guard
       segue.identifier == "fromEntriesIndexToEntriesShowSegue",
-      let destination = (
-        segue.destinationViewController as? EntriesShowController
-      ),
+      let destination = segue.destinationViewController
+        as? EntriesShowController,
       cell = sender as? UICollectionViewCell,
       indexPath = self.collectionView?.indexPathForCell(cell)
     else { return }
