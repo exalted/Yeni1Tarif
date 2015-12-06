@@ -1,4 +1,4 @@
 #include "Pods/Target Support Files/Pods-Yeni1Tarif/Pods-Yeni1Tarif.debug.xcconfig"
 
 // Ideally this should be the last line in order to override anything above it
-#include "Dotenv-Yeni1Tarif.xcconfig"
+#include "Dotenv-Yeni1Tarif.debug.xcconfig"
