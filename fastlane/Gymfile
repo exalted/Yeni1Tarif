@@ -1,0 +1,19 @@
+# For more information about this configuration visit
+# https://github.com/fastlane/gym#gymfile
+
+# In general, you can use the options available
+# gym --help
+
+# Remove the # in front of the line to enable the option
+
+workspace "Yeni1Tarif.xcworkspace"
+scheme "Yeni1Tarif"
+
+clean true
+
+include_bitcode true
+include_symbols true
+
+# sdk "iphoneos9.0"
+
+output_directory "./"
