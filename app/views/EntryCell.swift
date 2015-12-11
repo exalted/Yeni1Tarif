@@ -17,9 +17,9 @@ class EntryCell: UICollectionViewCell {
       self.previewImage.sd_setImageWithURL(url)
 
     default:
-      let previewUrl = entry.previewUrl.stringByReplacingOccurrencesOfString(
-        "1024x1024",
-        withString: "150x150")
+      let previewUrl = entry.previewUrl
+        .stringByReplacingOccurrencesOfString("1024x1024",
+         withString: "150x150")
       let url = NSURL(string: previewUrl)
       self.previewImage.sd_setImageWithURL(url)
       

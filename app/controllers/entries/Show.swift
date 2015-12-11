@@ -45,7 +45,23 @@ class EntriesShowController: UIViewController {
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
 
-    self.browser.loadHTMLString(self.entry.convertedContent, baseURL: nil)
+    let viewportSettings = "width=device-width initial-scale=1"
+    let stylesheetURL = "https://exalted.github.io/yeni1tarif-webview/css/main.css"
+
+    let htmlString = ""
+      + "<!DOCTYPE html>\n"
+      + "<html>\n"
+      + "  <head>\n"
+      + "    <meta charset=\"utf-8\">\n"
+      + "    <meta name=\"viewport\" content=\"\(viewportSettings)\" />\n"
+      + "    <link rel=\"stylesheet\" href=\"\(stylesheetURL)\">\n"
+      + "  </head>\n"
+      + "  <body>\n"
+      + "\(self.entry.convertedContent)\n"
+      + "  </body>\n"
+      + "</html>"
+
+    self.browser.loadHTMLString(htmlString, baseURL: nil)
   }
 
 }
@@ -56,6 +72,10 @@ extension EntriesShowController {
   private func _init() {
     self.browser = WKWebView()
     self.browser.translatesAutoresizingMaskIntoConstraints = false
+    #if DEBUG
+      self.browser.configuration.preferences.setValue(true,
+                                             forKey: "developerExtrasEnabled")
+    #endif
   }
 
 }
