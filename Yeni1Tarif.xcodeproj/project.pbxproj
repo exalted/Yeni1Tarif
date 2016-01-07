@@ -318,7 +318,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Ali Servet Donmez";
+				ORGANIZATIONNAME = Yeni1Tarif;
 				TargetAttributes = {
 					9A133D8B1A6089AF009E319B = {
 						CreatedOnToolsVersion = 6.1.1;
