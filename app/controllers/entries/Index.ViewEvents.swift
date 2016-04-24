@@ -32,8 +32,6 @@ extension EntriesIndexController {
     destination.entry = entry
   }
 
-  @IBAction func unwindToEntriesIndex(segue: UIStoryboardSegue) { }
-
 }
 
 // MARK: Internal
