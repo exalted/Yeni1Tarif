@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
         <!--Entries Index Controller-->
@@ -46,7 +47,10 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="previewImage" destination="CyW-Ck-yBT" id="yih-a3-8Zj"/>
-                                    <segue destination="S2i-Ng-prw" kind="show" identifier="fromEntriesIndexToEntriesShowSegue" id="ZL8-eb-o9v"/>
+                                    <segue destination="S2i-Ng-prw" kind="show" identifier="fromEntriesIndexToEntriesShowSegue" id="ZL8-eb-o9v">
+                                        <segue key="commit" inheritsFrom="parent" id="gNP-YN-ESl"/>
+                                        <segue key="preview" inheritsFrom="commit" id="Xkw-yM-j2m"/>
+                                    </segue>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -106,4 +110,7 @@
     <resources>
         <image name="CloseIcon" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZL8-eb-o9v"/>
+    </inferredMetricsTieBreakers>
 </document>
