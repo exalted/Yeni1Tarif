@@ -5,6 +5,8 @@ extension EntriesIndexController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    self.title = "Yeni1Tarif"
+
     self.collectionView?.dataSource = self.dataSource
   }
 
@@ -31,8 +33,6 @@ extension EntriesIndexController {
     //       then querying for "entry" by its "id" inside EntriesShowController.
     destination.entry = entry
   }
-
-  @IBAction func unwindToEntriesIndex(segue: UIStoryboardSegue) { }
 
 }
 
