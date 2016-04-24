@@ -5,6 +5,8 @@ extension EntriesIndexController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    self.title = "Yeni1Tarif"
+
     self.collectionView?.dataSource = self.dataSource
   }
 

@@ -15,6 +15,7 @@
 		9A133D9C1A6089AF009E319B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D9A1A6089AF009E319B /* LaunchScreen.xib */; };
 		9A133DA81A6089AF009E319B /* Yeni1TarifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */; };
 		9A182F131CCCBD81009B4DAB /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A182F121CCCBD81009B4DAB /* Secrets.swift */; };
+		9A182F171CCCF8A7009B4DAB /* Show.ViewEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A182F161CCCF8A7009B4DAB /* Show.ViewEvents.swift */; };
 		9A442EB01BC7244B008423CC /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A442EAF1BC7244B008423CC /* Index.swift */; };
 		9A4467D11BC9632B004CA5E7 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D01BC9632B004CA5E7 /* EntryCell.swift */; };
 		9A4467D71BC9AE07004CA5E7 /* EntriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D61BC9AE07004CA5E7 /* EntriesDataSource.swift */; };
@@ -52,6 +53,7 @@
 		9A133DA61A6089AF009E319B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yeni1TarifTests.swift; sourceTree = "<group>"; };
 		9A182F121CCCBD81009B4DAB /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		9A182F161CCCF8A7009B4DAB /* Show.ViewEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.ViewEvents.swift; sourceTree = "<group>"; };
 		9A442EAF1BC7244B008423CC /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
 		9A4467D01BC9632B004CA5E7 /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				9A442EAF1BC7244B008423CC /* Index.swift */,
 				9A4467D81BC9D4A8004CA5E7 /* Index.ViewEvents.swift */,
 				9AC6C3D41BCF179D0092BB5B /* Show.swift */,
+				9A182F161CCCF8A7009B4DAB /* Show.ViewEvents.swift */,
 			);
 			name = EntriesController;
 			path = entries;
@@ -419,6 +422,7 @@
 				9AA141B21BBB182100C3ABBF /* Entry.Queries.swift in Sources */,
 				9A133D921A6089AF009E319B /* AppDelegate.swift in Sources */,
 				9A868B0D1BD0A6460053B787 /* PFObject.Defaults.swift in Sources */,
+				9A182F171CCCF8A7009B4DAB /* Show.ViewEvents.swift in Sources */,
 				9A4467D71BC9AE07004CA5E7 /* EntriesDataSource.swift in Sources */,
 				9A4467D91BC9D4A8004CA5E7 /* Index.ViewEvents.swift in Sources */,
 			);
