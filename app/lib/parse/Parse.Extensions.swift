@@ -8,12 +8,12 @@ extension Parse {
     let notificationCenter = NSNotificationCenter.defaultCenter()
 
     notificationCenter.addObserver(self,
-                       selector: "_receiveWillSendURLRequestNotification:",
+                       selector: #selector(_receiveWillSendURLRequestNotification(_:)),
                        name: PFNetworkWillSendURLRequestNotification,
                        object: nil)
 
     notificationCenter.addObserver(self,
-                       selector: "_receiveDidReceiveURLResponseNotification:",
+                       selector: #selector(_receiveDidReceiveURLResponseNotification(_:)),
                        name: PFNetworkDidReceiveURLResponseNotification,
                        object: nil)
   }
