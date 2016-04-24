@@ -1,5 +1,0 @@
-// For each new configuration introduced add GCC preprocessor definition in:
-#include "Config-Yeni1Tarif.xcconfig"
-
-PARSE_APPLICATION_ID = "Parse Application ID is missing!"
-PARSE_CLIENT_KEY = "Parse Client Key is missing!"

@@ -14,6 +14,7 @@
 		9A133D991A6089AF009E319B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D981A6089AF009E319B /* Images.xcassets */; };
 		9A133D9C1A6089AF009E319B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A133D9A1A6089AF009E319B /* LaunchScreen.xib */; };
 		9A133DA81A6089AF009E319B /* Yeni1TarifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */; };
+		9A182F131CCCBD81009B4DAB /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A182F121CCCBD81009B4DAB /* Secrets.swift */; };
 		9A442EB01BC7244B008423CC /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A442EAF1BC7244B008423CC /* Index.swift */; };
 		9A4467D11BC9632B004CA5E7 /* EntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D01BC9632B004CA5E7 /* EntryCell.swift */; };
 		9A4467D71BC9AE07004CA5E7 /* EntriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4467D61BC9AE07004CA5E7 /* EntriesDataSource.swift */; };
@@ -52,9 +53,7 @@
 		9A133DA11A6089AF009E319B /* Yeni1TarifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Yeni1TarifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A133DA61A6089AF009E319B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A133DA71A6089AF009E319B /* Yeni1TarifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yeni1TarifTests.swift; sourceTree = "<group>"; };
-		9A329C511BB86421002063DC /* Yeni1Tarif.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Yeni1Tarif.debug.xcconfig; sourceTree = "<group>"; };
-		9A329C521BB865C1002063DC /* Dotenv-Yeni1Tarif.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Dotenv-Yeni1Tarif.debug.xcconfig"; sourceTree = "<group>"; };
-		9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Keys-Yeni1Tarif.xcconfig"; sourceTree = "<group>"; };
+		9A182F121CCCBD81009B4DAB /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		9A442EAF1BC7244B008423CC /* Index.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
 		9A4467CC1BC955B6004CA5E7 /* UIView+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug.h"; sourceTree = "<group>"; };
 		9A4467D01BC9632B004CA5E7 /* EntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.swift; sourceTree = "<group>"; };
@@ -69,8 +68,6 @@
 		9AC6C3D11BCEEB310092BB5B /* EntryCell.Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryCell.Layout.swift; sourceTree = "<group>"; };
 		9AC6C3D41BCF179D0092BB5B /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		9AC88BC61BB7278D00D244B6 /* Yeni1Tarif-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Yeni1Tarif-Bridging-Header.h"; sourceTree = "<group>"; };
-		9AF1B7971C14088B00807E92 /* Dotenv-Yeni1Tarif.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Dotenv-Yeni1Tarif.release.xcconfig"; sourceTree = "<group>"; };
-		9AF1B7991C1408B800807E92 /* Yeni1Tarif.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Yeni1Tarif.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,11 +187,7 @@
 		9A329C501BB86421002063DC /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				9A329C511BB86421002063DC /* Yeni1Tarif.debug.xcconfig */,
-				9AF1B7991C1408B800807E92 /* Yeni1Tarif.release.xcconfig */,
-				9A329C521BB865C1002063DC /* Dotenv-Yeni1Tarif.debug.xcconfig */,
-				9AF1B7971C14088B00807E92 /* Dotenv-Yeni1Tarif.release.xcconfig */,
-				9A329C541BB8AE74002063DC /* Keys-Yeni1Tarif.xcconfig */,
+				9A182F121CCCBD81009B4DAB /* Secrets.swift */,
 			);
 			name = Configuration;
 			path = config;
@@ -422,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0FEF651BC71286007A66D5 /* Parse.Extensions.swift in Sources */,
+				9A182F131CCCBD81009B4DAB /* Secrets.swift in Sources */,
 				9A4C0E801BCB2B06000D1000 /* EntriesDataSource.Index.swift in Sources */,
 				9AA141B01BBB06B500C3ABBF /* Entry.swift in Sources */,
 				9A4467D11BC9632B004CA5E7 /* EntryCell.swift in Sources */,
@@ -556,7 +550,7 @@
 		};
 		9A133DAC1A6089AF009E319B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A329C511BB86421002063DC /* Yeni1Tarif.debug.xcconfig */;
+			baseConfigurationReference = 99A1306927E54A64EAB0BBF7 /* Pods-Yeni1Tarif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -575,7 +569,7 @@
 		};
 		9A133DAD1A6089AF009E319B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AF1B7991C1408B800807E92 /* Yeni1Tarif.release.xcconfig */;
+			baseConfigurationReference = 0388C1C70937ED4341D4D490 /* Pods-Yeni1Tarif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

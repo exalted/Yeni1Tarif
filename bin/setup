@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-if [[ -f config/Dotenv-Yeni1Tarif.debug.xcconfig ]]; then
+if [[ -f config/Secrets.swift ]]; then
     exit 0
 fi
 
-cp config/Dotenv-Yeni1Tarif.xcconfig-template config/Dotenv-Yeni1Tarif.debug.xcconfig
+cp config/Secrets.swift-template config/Secrets.swift
