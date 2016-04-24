@@ -1,3 +1,5 @@
 language: objective-c
-xcode_project: Yeni1Tarif.xcodeproj
+osx_image: xcode7.2
+
+xcode_workspace: Yeni1Tarif.xcworkspace
 xcode_scheme: Yeni1Tarif
